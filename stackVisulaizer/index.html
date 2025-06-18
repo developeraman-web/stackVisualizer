@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stack visulaizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black; opacity: 0.9; color: white;">
+    <div class="container">
+        <div class="operations flex-row gap">
+            <div class="flex-row gap-4">
+                <label for="stackInput">Enter elements: </label>
+            <input type="number" name="stackInput" id="stackInput">
+            </div>
+            <div class="oprnButtons">
+                <button id="push">Push</button>
+                <button id="pop">Pop</button>
+                <button id="reset">reset</button>
+            </div>
+        </div>
+        <div class="visuals flex-row gap">
+            <div class="left flex-row justify-center">
+                <div id="stack" class="stack flex-col-reverse">
+                            <!-- <div class="element flex-row justify-center">12</div> -->
+                            
+                           
+                            
+                </div>
+            </div>
+            
+            <div class="right  flex-row justify-center">
+                <div class="info">
+                    <div class="flex-row  gap-4">
+                        <h3>Top of the stack:</h3>
+                        <span id="topElement"></span>
+                    </div>
+                    <div class="flex-row  gap-4">
+                        <h3>last pushed element:</h3>
+                        <span id="pushedElement"></span>
+                    </div>
+                    <div class="flex-row gap-4">
+                        <h3>last poped element:</h3>
+                        <span id="popedElement"></span>
+                    </div>
+                    <div class="flex-row gap-4">
+                        <h3>size:</h3>
+                        <span id="size"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message" class="message flex-row justify-center"></div>
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
